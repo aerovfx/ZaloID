@@ -4,7 +4,7 @@ Giới thiệu đến các bạn ứng dụng C++17 tự động lấy tin nhắ
 
 Ứng dụng poll định kỳ: lấy danh sách user đã tương tác với OA (`GET /v3.0/oa/user/getlist`), rồi lấy tối đa 10 tin nhắn gần nhất của từng user (`GET /v2.0/oa/conversation`), chống trùng theo `message_id`, in ra console và ghi vào file log.
 
-![Sơ đồ luồng hoạt động của zaloid](docs/zaloID.png)
+![Sơ đồ luồng hoạt động của zaloid](zaloID.png)
 
 *Sơ đồ luồng hoạt động: đăng nhập OA (OAuth v4 + PKCE, tự làm mới token) → poll danh sách user đã tương tác → lấy tin nhắn mới của từng user → chống trùng theo `message_id` → in ra console và ghi `zaloid.log`.*
 
