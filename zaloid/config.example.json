@@ -1,0 +1,11 @@
+{
+  "_comment": "Cach 1 (don gian): dan access_token OA vao duoi day hoac dat bien ZALO_ACCESS_TOKEN. Cach 2 (tu dong): dien app_id + secret_key roi chay './build/zaloid login'",
+  "access_token": "",
+  "app_id": "",
+  "secret_key": "",
+  "tokens_file": "tokens.json",
+  "callback_port": 18080,
+  "poll_interval_sec": 10,
+  "page_size": 20,
+  "log_file": "zaloid.log"
+}

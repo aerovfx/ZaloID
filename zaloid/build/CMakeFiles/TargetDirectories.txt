@@ -1,0 +1,5 @@
+/Users/dangvietchung/zaloid/zaloid/build/CMakeFiles/zaloid.dir
+/Users/dangvietchung/zaloid/zaloid/build/CMakeFiles/edit_cache.dir
+/Users/dangvietchung/zaloid/zaloid/build/CMakeFiles/rebuild_cache.dir
+/Users/dangvietchung/zaloid/zaloid/build/_deps/nlohmann_json-build/CMakeFiles/edit_cache.dir
+/Users/dangvietchung/zaloid/zaloid/build/_deps/nlohmann_json-build/CMakeFiles/rebuild_cache.dir
