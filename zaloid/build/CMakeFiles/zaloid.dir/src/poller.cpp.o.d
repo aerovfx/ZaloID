@@ -804,6 +804,8 @@ CMakeFiles/zaloid.dir/src/poller.cpp.o: \
   /Users/dangvietchung/zaloid/zaloid/include/zaloid/zalo_api.hpp \
   /Users/dangvietchung/zaloid/zaloid/include/zaloid/http_client.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
+  /Users/dangvietchung/zaloid/zaloid/include/zaloid/ocr_client.hpp \
+  /Users/dangvietchung/zaloid/zaloid/include/zaloid/config.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/forward_list \

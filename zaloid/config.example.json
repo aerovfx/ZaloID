@@ -7,5 +7,15 @@
   "callback_port": 18080,
   "poll_interval_sec": 10,
   "page_size": 20,
-  "log_file": "zaloid.log"
+  "log_file": "zaloid.log",
+  "ocr": {
+    "enabled": true,
+    "endpoint": "http://localhost:11434/api/generate",
+    "model": "qwen2.5vl:7b",
+    "timeout_sec": 120,
+    "temperature": 0.1,
+    "default_profile": "document",
+    "download_images": true,
+    "max_image_size_mb": 10
+  }
 }

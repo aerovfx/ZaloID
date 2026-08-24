@@ -21,6 +21,7 @@ add_executable(zaloid
   src/http_client.cpp
   src/zalo_api.cpp
   src/poller.cpp
+  src/ocr_client.cpp
 )
 
 target_include_directories(zaloid PRIVATE include third_party)

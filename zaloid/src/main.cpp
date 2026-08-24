@@ -9,6 +9,7 @@
 #include "zaloid/config.hpp"
 #include "zaloid/http_client.hpp"
 #include "zaloid/poller.hpp"
+#include "zaloid/http_client.hpp"
 #include "zaloid/zalo_api.hpp"
 
 namespace {
@@ -96,7 +97,7 @@ int main(int argc, char** argv) {
 
         std::string token = resolve_access_token(cfg, http);
         zaloid::ZaloApi api(http, token);
-        zaloid::Poller poller(api, cfg.poll_interval_sec, cfg.page_size, cfg.log_file);
+        zaloid::Poller poller(api, http, cfg.poll_interval_sec, cfg.page_size, cfg.log_file, cfg.ocr);
 
         std::signal(SIGINT, on_signal);
         std::signal(SIGTERM, on_signal);

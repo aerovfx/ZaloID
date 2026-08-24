@@ -845,6 +845,7 @@ CMakeFiles/zaloid.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/set.h \
   /Users/dangvietchung/zaloid/zaloid/include/zaloid/config.hpp \
+  /Users/dangvietchung/zaloid/zaloid/include/zaloid/ocr_client.hpp \
   /Users/dangvietchung/zaloid/zaloid/include/zaloid/poller.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
   /Users/dangvietchung/zaloid/zaloid/include/zaloid/zalo_api.hpp

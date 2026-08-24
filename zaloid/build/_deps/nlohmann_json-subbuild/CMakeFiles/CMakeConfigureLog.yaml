@@ -179,3 +179,14 @@ events:
         - "/Users/dangvietchung/.cargo/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/tmp/cmake-3.30.5-macos-universal/CMake.app/Contents/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Darwin - 25.6.0 - arm64
+...

@@ -9,12 +9,23 @@ struct User {
     std::string id; // user_id cua nguoi da tuong tac voi OA
 };
 
+struct ImageAttachment {
+    std::string id;           // Zalo media ID
+    std::string url;          // Direct image URL
+    std::string mime_type;    // image/jpeg, image/png, etc.
+    int width = 0;
+    int height = 0;
+    long long size = 0;       // bytes
+};
+
 struct Message {
     std::string id;         // message_id
     std::string from;       // from_id
     std::string from_name;  // from_display_name
     std::string text;       // noi dung (type "text")
     long long created_at = 0; // unix seconds
+    std::vector<ImageAttachment> images; // image attachments
+    int type = 0;           // 1=text, 2=image, 3=file, etc.
 };
 
 class ZaloApi {

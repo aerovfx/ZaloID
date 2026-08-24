@@ -20,6 +20,19 @@ Config Config::load(const std::string& path) {
             if (j.contains("secret_key")) cfg.secret_key = j["secret_key"].get<std::string>();
             if (j.contains("tokens_file")) cfg.tokens_file = j["tokens_file"].get<std::string>();
             if (j.contains("callback_port")) cfg.callback_port = j["callback_port"].get<int>();
+            
+            // OCR configuration
+            if (j.contains("ocr") && j["ocr"].is_object()) {
+                auto& ocr_j = j["ocr"];
+                if (ocr_j.contains("enabled")) cfg.ocr.enabled = ocr_j["enabled"].get<bool>();
+                if (ocr_j.contains("endpoint")) cfg.ocr.endpoint = ocr_j["endpoint"].get<std::string>();
+                if (ocr_j.contains("model")) cfg.ocr.model = ocr_j["model"].get<std::string>();
+                if (ocr_j.contains("timeout_sec")) cfg.ocr.timeout_sec = ocr_j["timeout_sec"].get<int>();
+                if (ocr_j.contains("temperature")) cfg.ocr.temperature = ocr_j["temperature"].get<double>();
+                if (ocr_j.contains("default_profile")) cfg.ocr.default_profile = ocr_j["default_profile"].get<std::string>();
+                if (ocr_j.contains("download_images")) cfg.ocr.download_images = ocr_j["download_images"].get<bool>();
+                if (ocr_j.contains("max_image_size_mb")) cfg.ocr.max_image_size_mb = ocr_j["max_image_size_mb"].get<int>();
+            }
         }
     }
     if (const char* env = std::getenv("ZALO_ACCESS_TOKEN"); env && *env) {
@@ -35,6 +48,8 @@ Config Config::load(const std::string& path) {
     }
     if (cfg.poll_interval_sec < 1) cfg.poll_interval_sec = 1;
     if (cfg.page_size < 1 || cfg.page_size > 50) cfg.page_size = 20;
+    if (cfg.ocr.timeout_sec < 1) cfg.ocr.timeout_sec = 30;
+    if (cfg.ocr.max_image_size_mb < 1) cfg.ocr.max_image_size_mb = 10;
     return cfg;
 }
 
